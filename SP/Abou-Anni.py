@@ -6,7 +6,9 @@ urls = [f"https://www.camara.leg.br/deputados/204521/votacoes-nominais-plenario/
 class AbouAnniScraper(scrapy.Spider):
     # Spiders são classes que definem como um determinado site vai ser raspado
     name = 'abou-anni-spider'
+
     start_urls = urls
+    
     custom_settings = {
         'FEEDS': {
             'abou-anni.csv': {
